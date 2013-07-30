@@ -1,0 +1,11 @@
+c++ study material:
+
+1. dynamic allocation of memory:
+  int* a=new int;
+  allocating memory and initialising by:
+  char* ptr=new char('a');
+  float* fpt=new float(1.23);
+  for array:
+    int* a=new int[10];
+  
+  

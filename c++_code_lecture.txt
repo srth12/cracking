@@ -1,0 +1,24 @@
+c++ study material:
+
+1. dynamic allocation of memory:
+  int* a=new int;
+  allocating memory and initialising by:
+  char* ptr=new char('a');
+  float* fpt=new float(1.23);
+  for array:
+    int* a=new int[10];
+    
+ 2. dynamic deallocation of memory by:
+   delete ptr;
+   for array of size 10:
+   delete[10] ptr;
+   
+3. c++ treats strings as char array,
+   char name[]="pointer";
+   
+   - we can also create strings using array of pointers:
+      char * name[]={"sachin","tendulkar","sarath"};
+      
+   -to retrive the names call name[1] ...
+  
+  
