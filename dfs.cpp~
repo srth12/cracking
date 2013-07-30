@@ -20,6 +20,6 @@ G->adj[i][j]=0;
 }
 
 int main(){
-cout<<sizeof(int);
+cout<<sizeof(char);
 
 }
