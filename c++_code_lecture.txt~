@@ -7,5 +7,66 @@ c++ study material:
   float* fpt=new float(1.23);
   for array:
     int* a=new int[10];
+    
+ 2. dynamic deallocation of memory by:
+   delete ptr;
+   for array of size 10:
+   delete[10] ptr; or delete[] ptr;
+   
+   for multidimentional array:
+   pt=new int[3][4]...
+    note: for multidimentional array only 1-D can be variable or constants, rest should be constants.
+   
+3. c++ treats strings as char array,
+   char name[]="pointer";
+   
+   - we can also create strings using array of pointers:
+      char * name[]={"sachin","tendulkar","sarath"};
+      
+   -to retrive the names call name[1] ...
   
-  
+ 4. Pointers and functions:
+   a. call by value
+   b. calll by reference
+  -call  by reference used in 2 ways : 
+    1. by passing the reference (alias name for the original)
+       float value= 12.3
+       float & amt=value; //amt reference to value
+       
+       so, 
+       cout<<value; is same as cout<<amt;
+       
+       note: reference may be passed only for variables not for constants
+       
+    2. by passing the pointer:
+        float value=12.3;
+        float *fp=&value;
+        
+        then, cout<<*fp;
+        
+        ex:
+        void swap(int &a,int &b){
+        
+        int temp;
+        temp=a;
+        a=b;
+        b=temp;
+        }
+        int main(){
+        
+        int a=3,b=4;
+        swap(a,b);
+        cout<<a<<b;
+        }
+        
+  5. dynamically creating structures:
+    
+    Employee* emp;
+    emp=new Employee;
+    
+    delete emp;      
+  6. passing objects through call by value
+       a called function receiving an object as a parameter creates the copy of the object without
+       invoking the constructor. However when the fn terminates it  destroy the copy of the object
+       by invoking the destructor.
+       

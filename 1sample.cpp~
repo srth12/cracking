@@ -2,7 +2,24 @@
 #include <stdio.h>
 using namespace std;
 
-int main(){
-int x=0;
-printf("%d,%d",x,x++,++x);
-}
+//int main(){
+//int x=0;
+//printf("%d,%d,%d",x,x++,++x);
+//}
+
+
+ void swap(int &a,int &b){
+        
+        int temp;
+        temp=a;
+        a=b;
+        b=temp;
+        }
+        int main(){
+        
+        int a=3,b=4;
+        cout<<a<<b;
+        swap(1,2);
+        
+        cout<<a<<b;
+        }
